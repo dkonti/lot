@@ -143,10 +143,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'images')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.mail.ru'
-EMAIL_HOST_USER = 'petsmartcharities@mail.ru'
-EMAIL_HOST_PASSWORD = 'T7TXK6ajnQSCLfD7FK0z'
+EMAIL_HOST = 'smtp.mail.yahoo.com'
+EMAIL_HOST_USER = 'libertexonlinetrading@yahoo.com'
+EMAIL_HOST_PASSWORD = 'jihurwntbgtivtve'
 EMAIL_PORT = 587
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'capitaltrade.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -90,15 +90,14 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd3heqge8e9a6ml',
-        'USER': 'fpjgvmizigpajd',
-        'PASSWORD': 'cc5138f079754f95ba8b23ec8cfaa83c233db9ba73fd6f05b16c73ddc8bba8e9',
-        'HOST': 'ec2-54-196-105-177.compute-1.amazonaws.com',
+        'NAME': 'aa1rckoydgkblgr',
+        'USER': 'postgres',
+        'PASSWORD': 'Richard@konti4',
+        'HOST': 'aa1rckoydgkblgr.cfi8sediftq9.us-west-2.rds.amazonaws.com',
         'PORT':  '5432',
         'ATOMIC_REQUESTS': True,
     }
 }
-'''
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators

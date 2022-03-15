@@ -92,7 +92,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'aa1rckoydgkblgr',
         'USER': 'postgres',
-        'PASSWORD': 'Richard@konti4',
+        'PASSWORD': 'mellykonti4',
         'HOST': 'aa1rckoydgkblgr.cfi8sediftq9.us-west-2.rds.amazonaws.com',
         'PORT':  '5432',
         'ATOMIC_REQUESTS': True,

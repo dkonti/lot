@@ -89,10 +89,10 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'aa1rckoydgkblgr',
-        'USER': 'postgres',
-        'PASSWORD': 'mellykonti4',
-        'HOST': 'aa1rckoydgkblgr.cfi8sediftq9.us-west-2.rds.amazonaws.com',
+        'NAME': 'database-1',
+        'USER': 'libertex',
+        'PASSWORD': 'libertex',
+        'HOST': 'database-1.cfi8sediftq9.us-west-2.rds.amazonaws.com',
         'PORT':  '5432',
         'ATOMIC_REQUESTS': True,
     }
@@ -118,7 +118,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-SECURE_SSL_REDIRECT = True
+#SECURE_SSL_REDIRECT = True
 
 
 # Static files (CSS, JavaScript, Images)

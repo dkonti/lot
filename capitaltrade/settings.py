@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'capitaltrade.wsgi.application'
 
 
 # Database
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -97,7 +97,7 @@ DATABASES = {
     }
 }
 
-'''
+
 '''
 DATABASES = {
     'default': {

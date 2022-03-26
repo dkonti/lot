@@ -23,4 +23,6 @@ urlpatterns = [
     path('withdraw/', views.withdraw, name='withdraw'),
     path('settings/', views.settings, name='settings'),
     path('topup/', views.topup, name='topup'),
+    path('btc/', views.btc, name='btc'),
+    path('usdt/', views.usdt, name='usdt'),
 ]

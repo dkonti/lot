@@ -62,8 +62,6 @@
 							<ul>
 								<li><a href="{% url 'signin' %}"><i class="icofont icofont-login"></i> Login </a></li>
 								<li><a href="{% url 'signup' %}"><i class="icofont icofont-user-alt-5"></i> Register </a></li>
-								<li><a href="#"><i class="icofont icofont-hand-drag2"></i> Help </a></li>
-								<li><a href="#"><i class="icofont icofont-live-support"></i> Support </a></li>
 							</ul>
 						</div>
 					</div> 
@@ -91,17 +89,17 @@
 								<i class="fa fa-envelope-open"></i>
 							</div>
 							<p>Email Us</p>
-                            <h6 style=font-size:3px;>libertexonlinetrading@yahoo.com</h6>
+                            <h6 style="font-size:15px;">libertexonlinetrading@yahoo.com</h6>
                         </div>
 						<div class="header-info-box">
                             <div class="header-info-icon">
 								<i class="icofont icofont-phone"></i>
 							</div>
 							<p>Whatsapp</p>
-                            <h6>(689)-999-1409</h6>
+                            <h6>+447470937604</h6>
                         </div>
 						<div class="header-info-box">
-                            <a href="#" class="quote-btn">Get Started <i class="icofont icofont-caret-right"></i></a>
+                            <a href="{% url 'signup' %}" class="quote-btn">Get Started <i class="icofont icofont-caret-right"></i></a>
                         </div>
 					</div>
 					<!-- end col -->
@@ -120,14 +118,14 @@
 								<ul class="navbar-nav">
 								   <li><a href="{% url 'home' %}" class="active nav-link">Home</a>
 									</li>
-									<li><a class="nav-link" href="#">About Us</a>
+									<li><a class="nav-link" href="{% url 'home' %}#about">About Us</a>
 									</li>
-									<li><a href="service.html" class="nav-link">Services</a>
+									<li><a href="{% url 'home' %}#service" class="nav-link">Services</a>
 									</li>
 									<li><a href="{% url 'wallet' %}" class="nav-link">Wallet</a>
 									</li>
 									</li>
-									<li><a href="contact.html" class="nav-link">Contact</a></li>
+									<li><a href="{% url 'home' %}#contact" class="nav-link">Contact</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -190,7 +188,7 @@
 						<div class="col-12 footer-widget-inner">
 							<ul class="quick-link-list">
 								<li><a href="{% url 'home' %}"><i class="fa fa-chevron-circle-right"></i> Home</a></li>
-								<li><a href="{% url 'signin' %}"><i class="fa fa-chevron-circle-right"></i> Register</a></li>
+								<li><a href="{% url 'signup' %}"><i class="fa fa-chevron-circle-right"></i> Register</a></li>
 								<li><a href="{% url 'wallet' %}"><i class="fa fa-chevron-circle-right"></i> Wallet</a></li>
 							</ul>
 						</div>	
@@ -219,7 +217,7 @@
 								</div>
 								<div class="single-fcontact-des">
 									<h6>Phone Number:</h6>
-									<p>(689)-999-1409</p>
+									<p>+447470937604</p>
 								</div>
 							</div>
 						</div>

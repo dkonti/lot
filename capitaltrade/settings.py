@@ -156,13 +156,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_SSL = True
-EMAIL_HOST = 'smtp.mail.yahoo.com'
-EMAIL_HOST_USER = 'libertexonlinetrading@yahoo.com'
-EMAIL_HOST_PASSWORD = 'dxswpukjashioqkk'
-EMAIL_PORT = 465
-
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 CSRF_TRUSTED_ORIGINS = ['https://*.maximumtrade.online','https://*.127.0.0.1']

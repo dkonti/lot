@@ -77,15 +77,7 @@ WSGI_APPLICATION = 'capitaltrade.wsgi.application'
 
 
 # Database
-'''
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
-'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -97,20 +89,6 @@ DATABASES = {
     }
 }
 
-
-'''
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'database-1',
-        'USER': 'libertex',
-        'PASSWORD': 'libertex',
-        'HOST': 'database-1.cfi8sediftq9.us-west-2.rds.amazonaws.com',
-        'PORT':  '5432',
-        'ATOMIC_REQUESTS': True,
-    }
-}
-'''
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -137,13 +115,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
+
 STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (
-   os.path.join(BASE_DIR, 'static'),
-)
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 

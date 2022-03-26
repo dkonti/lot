@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3!z0)-32czyc0^+h_ow_q)^b@@)688!=@5s-b_@zf6n(=z_r5t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -157,11 +157,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_TLS = True
+EMAIL_USE_SSL = True
 EMAIL_HOST = 'smtp.mail.yahoo.com'
 EMAIL_HOST_USER = 'libertexonlinetrading@yahoo.com'
-EMAIL_HOST_PASSWORD = 'jihurwntbgtivtve'
-EMAIL_PORT = 587
+EMAIL_HOST_PASSWORD = 'dxswpukjashioqkk'
+EMAIL_PORT = 465
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 

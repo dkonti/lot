@@ -29,7 +29,7 @@ def deposit(request):
 
     if request.method == 'POST':
         invest = request.POST.get('invest')
-        amount = request.POST.get('asset')
+        amount = request.POST.get('amount')
         subject = 'Deposit'
         send_to = ['libertexonlinetrading@yahoo.com',]
         current_user = request.user

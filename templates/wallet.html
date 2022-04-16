@@ -86,7 +86,7 @@
               <span class="menu-title" style="color: #ffa500;">Dashboard</span>
             </a>
           </li>
-          <li class="nav-item nav-category">Liberty Online Trading</li>
+          <li class="nav-item nav-category">Libertex</li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'home' %}" >
               <i class="menu-icon mdi mdi-floor-plan" style="color: #ffa500;"></i>
@@ -155,6 +155,16 @@
                           <div>
                             <p class="statistics-title">ETH</p>
                             <h3 class="rate-percentage">{{ user.dashboard.eth }}</h3>
+                            <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>68.8</span></p>
+                          </div>
+						  <div>
+                            <p class="statistics-title">Profit</p>
+                            <h3 class="rate-percentage">{{ user.dashboard.profit }}</h3>
+                            <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>68.8</span></p>
+                          </div>
+						  <div>
+                            <p class="statistics-title">Bonus</p>
+                            <h3 class="rate-percentage">{{ user.dashboard.bonus }}</h3>
                             <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>68.8</span></p>
                           </div>
                         </div>

@@ -58,30 +58,12 @@
 							{% csrf_token %}
 								<div class="row">
 									<div class="form-group col-12 mb-3">
-										<label for="invest">What are you Paying with?</label>
-										<div class="input-group">
-										<select name="invest"  class="form-control required" autofocus required>
-											<option value="bitcoin">BTC</option>
-											<option value="ethereum">USDT</option>
-										</select>
-                                        
-                                    </div>  
+										<h5 class="text-center">Select Payment Method</h5> 
 									</div>
 									<div class="form-group col-12 mb-3 text-center">
-										<label for="amount">Pay with:</label>
-										<div class="input-group">
-                                            <a href="{% url 'btc' %}" class="quote-btn">BTC <i class="icofont icofont-cur-bitcoin-plus"></i></a>
-										</div>
-										<div class="input-group">
+										<p>Pay with:</p></br>
+                                            <a href="{% url 'btc' %}" class="quote-btn">BTC <i class="icofont icofont-cur-bitcoin-plus"></i></a></br>
 											<a href="{% url 'usdt' %}" class="quote-btn">USDT <i class="icofont icofont-coins"></i></a>
-                                        </div> 
-									</div>
-									
-									<div class="form-group col-lg-12 mb-0 text-center">
-										<div class="actions">
-											<input value="Done" name="login" id="submitButton" class="btn btn-contact-bg" title="Click here to deposit!" type="submit">
-											<img src="{% static 'assets/img/ajax-loader.gif' %}" id="loader" style="display:none" alt="loading" width="16" height="16">
-										</div>
 									</div>
 								</div>
 							</form>								

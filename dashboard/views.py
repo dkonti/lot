@@ -31,10 +31,14 @@ def topup(request):
    
 @login_required   
 def btc(request):
+    if request.method == 'POST':
+        return redirect('success')
     return render(request, 'btc.html')
     
 @login_required   
 def usdt(request):
+    if request.method == 'POST':
+        return redirect('success')
     return render(request, 'usdt.html')
     
     

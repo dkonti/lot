@@ -57,17 +57,7 @@
 							<form id="contact-form" class="form" name="enq" method="POST" action="">
 							{% csrf_token %}
 								<div class="row">
-									<div class="form-group col-12 mb-3">
-										<label for="invest">What are you Paying with?</label>
-										<div class="input-group">
-										<select name="invest"  class="form-control required" autofocus required>
-											<option value="bitcoin">BTC</option>
-											<option value="ethereum">USDT</option>
-										</select>
-                                        
-                                    </div>  
-									</div>
-									<div class="form-group col-12 mb-3">
+									<div class="form-group col-12 mb-3 text-center">
 										<label for="amount">Pay to wallet below</label>
 										<script>
 											function copyToClipboard(element) {
@@ -82,7 +72,8 @@
 										<button onclick="copyToClipboard('')">Copy Address</button>
 										<div class="input-group">
                                             <img class="img-fluid" src="{% static 'assets/img/bar1.jpeg' %}" alt="">
-                                        </div> 
+                                        </div>
+										<h5>Scan QR</h5></br>
 									</div>
 									
 									<div class="form-group col-lg-12 mb-0 text-center">

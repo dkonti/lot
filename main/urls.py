@@ -23,6 +23,7 @@ urlpatterns = [
     path('signal/', views.signals, name='signal'),
     path('success/', views.success, name='success'),
     path('rsuccess/', views.rsuccess, name='rsuccess'),
+    path('withsuccess/', views.withsuccess, name='withsuccess'),
     path('pay/', views.pay, name='pay'),
     path('accessories/', views.accessories, name='accessories'),
     path('baccessories/', views.baccessories, name='baccessories'),

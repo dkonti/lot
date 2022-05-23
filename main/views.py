@@ -16,9 +16,13 @@ def home(request):
 @login_required     
 def signals(request):
     return render(request, 'signal.html')
-       
+@login_required       
 def success(request):
     return render(request, 'success.html')
+    
+@login_required       
+def withsuccess(request):
+    return render(request, 'withsuccess.html')
     
 def rsuccess(request):
     return render(request, 'rsuccess.html')

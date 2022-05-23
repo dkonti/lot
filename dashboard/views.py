@@ -13,7 +13,7 @@ def wallet(request):
 @login_required   
 def withdraw(request):
     if request.method == 'POST':
-        return redirect('success')
+        return redirect('withsuccess')
     return render(request, 'withdraw.html')
 @login_required   
 def deposit(request):

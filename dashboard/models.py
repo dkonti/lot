@@ -8,9 +8,9 @@ from django.contrib.auth.models import User
 class Dashboard(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     total = models.FloatField(default=0.0000)
-    usd = models.FloatField(default=0.0000)
-    btc = models.FloatField(default=0.0000)
+    deposit = models.FloatField(default=0.0000)
     eth = models.FloatField(default=0.0000)
+    btc = models.FloatField(default=0.0000)
     profit = models.FloatField(default=0.0000)
     bonus = models.FloatField(default=0.0000)
     

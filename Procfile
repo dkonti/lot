@@ -1,1 +1,0 @@
-web: gunicorn capitaltrade.wsgi --log-file -

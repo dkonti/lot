@@ -81,16 +81,16 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="{% url 'home' %}">
               <i class="mdi mdi-grid-large menu-icon" style="color: #ffa500;"></i>
-              <span class="menu-title" style="color: #ffa500;">Dashboard</span>
+              <span class="menu-title" style="color: #ffa500;">Homepage</span>
             </a>
           </li>
           <li class="nav-item nav-category">Libertex</li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'home' %}" >
+            <a class="nav-link" href="{% url 'wallet' %}" >
               <i class="menu-icon mdi mdi-floor-plan" style="color: #ffa500;"></i>
-              <span class="menu-title">Homepage</span>
+              <span class="menu-title">Dashboard</span>
             </a>
 		</li>
 
@@ -144,7 +144,7 @@
                         <div class="statistics-details d-flex align-items-center justify-content-between">
 						<div>
                             <p class="statistics-title">Deposit</p>
-                            <h3 class="rate-percentage"></h3>
+                            <h3 class="rate-percentage">{{ user.dashboard.deposit }}</h3>
                             <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>68.8</span></p>
                           </div>
 						<div>

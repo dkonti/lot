@@ -78,19 +78,6 @@ WSGI_APPLICATION = 'capitaltrade.wsgi.application'
 
 # Database
 
-'''
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'libertexdb',
-        'USER': 'libertex_admin',
-        'PASSWORD': 'mellykonti4',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
-'''
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',

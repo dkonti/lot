@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+	
+	<!-- START PAGE BANNER AND BREADCRUMBS -->
+	<section id="page-banner">
+		<div class="single-page-title-area overlay" data-background="assets/img/bg/slide1.jpg">
+			<div class="auto-container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<div class="single-page-title">
+							<h2>Registration Successful</h2>
+							<p>Start Your Journey Today</p>
+						</div>
+					</div>
+				</div>
+				<!-- end row-->
+			</div>
+		</div>
+		<div class="single-page-title-area-bottom">
+			<div class="auto-container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="#">Home</a></li>
+							<li class="breadcrumb-item active">Registration <i class="fas fa-check-circle"></i></li>
+						</ol>
+					</div>
+				</div>
+				<!-- end row-->
+			</div>
+		</div>
+	</section>
+	<!-- END PAGE BANNER AND BREADCRUMBS -->
+	
+	<!-- START CONTACT SECTION -->
+    <section id="contactpage" class="section-padding">
+        <div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<div class="section-title">
+						<h5>Your account has been created</h5>
+						<i class="fas fa-check-circle fa-10x" style="color:green;"></i>
+						<h3>Registration<span> Successful</span></h3>
+					</div>
+					<p>Click <a href="{% url 'home' %}">Here to Continue</a></p>
+				</div>
+			</div>
+			<!-- end section title -->
+		
+			</div>
+			<!-- end row -->
+        <!--- END CONTAINER -->
+    </section>
+    <!-- END CONTACT SECTION -->
+	
+	
+{% endblock %}
